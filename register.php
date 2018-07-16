@@ -17,7 +17,7 @@
 
 <html>
 <head>
-	<title>Welcome to Slotify!</title>
+	<title>Welcome to My Music Player</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
 
@@ -57,7 +57,7 @@
 					<p>
 						<?php echo $account->getError(Constants::$loginFailed); ?>
 						<label for="loginUsername">Username</label>
-						<input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. bartSimpson" required>
+						<input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. bartSimpson" value="<?php getInputValue('loginUsername') ?>" required>
 					</p>
 					<p>
 						<label for="loginPassword">Password</label>
@@ -131,6 +131,18 @@
 
 
 			</div>
+			<div id="loginText">
+				<h1>get great music, right now</h1>
+				<h2>listen to loads of songs for free</h2>
+				<ul>
+					<li>discover music you'll fall in love with</li>
+					<li>create your own playlist</li>
+					<li>follow artists to keep up to date</li>
+				</ul>
+			</div>
+
+
+
 		</div>
 	</div>
 

@@ -75,6 +75,7 @@ body {
 	color: #a0a0a0;
     font-size: 13px;
     margin-top: 15px;
+    display: block;
 }
 
 #inputContainer button {
@@ -97,6 +98,7 @@ body {
 .hasAccountText span {
 	font-weight: bold;
     font-size: 12px;
+    cursor: pointer;
 }
 
 .hasAccountText {
@@ -106,4 +108,35 @@ body {
 #registerForm,
 #loginForm {
 	display: none;
+}
+
+#loginText  {
+    padding: 45px;
+    display: table-cell;
+}
+
+#loginText h1 {
+    color: green;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#loginText h2 {
+    margin: 35px 0px;
+}
+
+#loginText ul {
+    padding: 0px;
+}
+#loginText li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 15px 50px;
+    background: url(../images/icons/check.png) no-repeat 0 0;
+}
+
+#inputContainer .errorMessage {
+    color: green;
+    font-size: 12px;
+    display: block;
 }
