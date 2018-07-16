@@ -20,7 +20,14 @@ else {
 
 <body>
 
-	<div id="nowPlayingBarContainer">
+
+<div id="mainContainer">
+
+<div id="topContainer">
+	
+</div>
+
+<div id="nowPlayingBarContainer">
 		<div id="nowPlayingBars">
 
 		<div id="nowPlayingLeft">
@@ -111,11 +118,8 @@ else {
 		</div>
 			
 		</div>
-	</div>
-	
-
-
-
+	</div>	
+</div>
 
 
 
