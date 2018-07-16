@@ -15,10 +15,35 @@ else {
 <html>
 <head>
 	<title>Welcome to Slotify!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-	Hello!
+
+	<div id="nowPlayingBarContainer">
+		<div id="nowPlayingBars">
+
+		<div id="nowPlayingLeft">
+			
+		</div>
+
+		<div id="nowPlayingCenter">
+			
+		</div>
+
+		<div id="nowPlayingLeft">
+			
+		</div>
+			
+		</div>
+	</div>
+	
+
+
+
+
+
+
 </body>
 
 </html>
