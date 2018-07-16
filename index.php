@@ -24,6 +24,27 @@ else {
 		<div id="nowPlayingBars">
 
 		<div id="nowPlayingLeft">
+			<div class="content">
+				<span class="albumLink">
+					<img class="albumArtwork" src="https://i.ytimg.com/vi/rb8Y38eilRM/maxresdefault.jpg" alt="">
+				</span>
+
+				<div class="trackInfo">
+					
+					<span class="trackName">
+						<span>a millie</span>
+					</span>
+					<span class="artistName">
+						<span>lil wayne</span>
+					</span>
+				</div>
+
+
+
+
+
+
+			</div>
 			
 		</div>
 
@@ -57,12 +78,36 @@ else {
 
 				</div>
 
+
+				<div class="playbackBar">
+					<span class="progressTime current">0.00</span>
+					<div class="progressBar">
+						<div class="progressBarBg">
+							<div class="progress"></div>
+						</div>
+					</div>
+					<span class="progressTime remaining">0.00</span>
+
+
+				</div>
+
 			</div>
 			
 		</div>
 
-		<div id="nowPlayingLeft">
-			
+
+		<div id="nowPlayingRight">
+			<div class="volumeBar">
+				<button class="controlButton volume" title="Volume button">
+					<img src="assets/images/icons/volume.png" alt="Volume">
+				</button>
+
+				<div class="progressBar">
+					<div class="progressBarBg">
+						<div class="progress"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 			
 		</div>
