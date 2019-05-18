@@ -8,19 +8,15 @@
 		while($row = mysqli_fetch_array($albumQuery)) {
 			echo '<div class="gridViewItem">
 
-				<img class="img-responsive" src="' . $row["artworkPath"] . '" alt="">
+				<img src="' . $row["artworkPath"] . '" alt="">
 
 				<div class="gridViewInfo">'
-					. $row["title"];
+					. $row["title"] .
 				'</div>
 			</div>';
 		} 
 	 ?>
 </div>
-
-
-
-
 
 
 <?php include('includes/footer.php') ?>
