@@ -12,7 +12,7 @@
 			$this->con = $con;
 			$this->id = $id;
 
-			$albumQuery = mysqli_query($this->con, "select * from albums where id = '$this->id' ");
+			$albumQuery = mysqli_query($this->con, "select * from Albums where id = '$this->id' ");
 			$album = mysqli_fetch_array($albumQuery);
 
 			$this->title = $album['title'];
@@ -33,6 +33,11 @@
 		}
 		public function getGenre() {
 			return $this->genre;
-		}		
+		}
+		public function getNumberOfSong() {
+			$albumQuery = mysqli_query($this->con, "select id from Songs where album = '$this->id' ");
+
+			return mysqli_num_rows($albumQuery);
+		}
 	}
 ?>
