@@ -16,7 +16,7 @@
 			$this->con = $con;
 			$this->id = $id;
 
-			$albumQuery = mysqli_query($this->con, "select * from songs where id = '$this->id' ");
+			$albumQuery = mysqli_query($this->con, "select * from Songs where id = '$this->id'");
 			$this->mysqliData = mysqli_fetch_array($albumQuery);
 			$this->title = $this->mysqliData['title'];
 			$this->artistId = $this->mysqliData['artist'];
@@ -30,7 +30,7 @@
 			return $this->title;
 		}
 
-		public function getArist() {
+		public function getArtist() {
 			return new Artist($this->con, $this->artistId);
 		}
 

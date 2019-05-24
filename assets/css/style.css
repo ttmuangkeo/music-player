@@ -260,6 +260,22 @@ body {
 	color: #939393;
 	font-weight: 200;
 }
+.tracklistRow {
+	height: 40px;
+	list-style: none;
+	padding: 15px 10px;
+}
+.trackList {
+	padding: 0;
+}
+.tracklistRow span {
+	color: #939393;
+	font-weight: 200;
+}
+.tracklistRow:hover {
+	background-color: #282828;
+}
+
 
 
 

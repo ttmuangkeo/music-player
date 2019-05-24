@@ -5,7 +5,7 @@ if(isset($_GET['id'])) {
 
 } else {
 	header('Location: index.php');
-};
+}
 
 $album = new Album($con, $albumId);
 $artist = $album->getArtist();
@@ -28,9 +28,35 @@ $artist = $album->getArtist();
 	<ul class="trackList">
 		<?php 
 		$songIdArray = $album->getSongId();
-
+		$i = 1;
 		foreach ($songIdArray as $songId) {
-			echo $songId . "<br>";
+			$albumSong = new Song($con, $songId);
+			$albumArtist = $albumSong->getArtist();
+
+//remember to add more.png later
+			echo "<li class='tracklistRow'>
+				<div class='trackCount'>
+					<img class='play' src='assets/images/icons/play.png' alt=''>
+					<span class='trackNumer'>$i</span>
+				</div>
+				<div class='trackInfo'>
+					<span class='trackName'>" . $albumSong->getTitle() . "</span>
+					<span class='artistName'>" . $albumArtist->getName() . "</span>
+				</div>
+				<div class='trackOptions'>
+					<img class='optionsButton' src='assets/images/icons/more.png' alt=''>
+				</div>
+				<div class='trackOptions'>
+					<span class='duration'>" . $albumSong->getDuration() ."</span>
+				</div>
+
+
+
+
+
+			</li>";
+
+			$i++;
 		}
 		 ?>
 	</ul>
