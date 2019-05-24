@@ -2,6 +2,7 @@
 include("includes/config.php");
 include("includes/classes/Artist.php");
 include("includes/classes/Album.php");
+include("includes/classes/Song.php");
 
 //session_destroy(); LOGOUT
 
@@ -30,4 +31,4 @@ else {
 	<?php include('includes/navBarContainer.php') ?>
 
 		<div id='mainViewContainer'>
-			<div id="mainContent">
+		<div id="mainContent">
