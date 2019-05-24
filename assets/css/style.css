@@ -275,7 +275,51 @@ body {
 .tracklistRow:hover {
 	background-color: #282828;
 }
-
-
-
-
+.tracklistRow .trackCount {
+	width: 8%;
+	float: left;
+}
+.tracklistRow .trackCount img {
+	width: 20px;
+	visibility: hidden;
+	position: absolute;
+	cursor: pointer;
+}
+.tracklistRow:hover .trackCount img {
+	visibility: visible;
+}
+.tracklistRow .trackCount span {
+	visibility: visible;
+}
+.tracklistRow:hover .trackCount span {
+	visibility: hidden;
+}
+.tracklistRow .trackInfo {
+	width: 75%;
+	float: left;
+}
+.tracklistRow .trackInfo span {
+	display: block;
+}
+.tracklistRow .trackOptions {
+	float: left;
+	width: 5%;
+	text-align: right;
+}
+.tracklistRow .trackOptions img{
+	width: 15%;
+	visibility: hidden;
+}
+.tracklistRow:hover .trackOptions img{
+	visibility: visible;
+}
+.tracklistRow .trackDuration{
+	width: 12%;
+	float: left;
+	text-align: right;
+}
+.tracklistRow .trackInfo .trackName {
+	color: #ffffff;
+	margin-bottom: 7px; 
+	
+}

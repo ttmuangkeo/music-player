@@ -33,7 +33,7 @@ $artist = $album->getArtist();
 			$albumSong = new Song($con, $songId);
 			$albumArtist = $albumSong->getArtist();
 
-//remember to add more.png later
+//remember to add more.png and white play btn later
 			echo "<li class='tracklistRow'>
 				<div class='trackCount'>
 					<img class='play' src='assets/images/icons/play.png' alt=''>
@@ -47,7 +47,7 @@ $artist = $album->getArtist();
 					<img class='optionsButton' src='assets/images/icons/more.png' alt=''>
 				</div>
 				<div class='trackOptions'>
-					<span class='duration'>" . $albumSong->getDuration() ."</span>
+					<span class='trackDuration'>" . $albumSong->getDuration() ."</span>
 				</div>
 
 
