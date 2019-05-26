@@ -9,7 +9,21 @@ while($row = mysqli_fetch_array($songQuery)) {
 
 $jsonArray = json_encode($resultArray);
  ?>
+<script>
+   $(document).ready(function() {
+      currentPlaylist = <?php echo $jsonArray; ?>;
+      audioElement = new Audio();
+      setTrack(currentPlaylist[0], currentPlaylist, false);
+   });
 
+
+   function setTrack(trackId, newPlaylist, play) {
+      audioElement.setTrack('assets/music/bensound-tomorrow.mp3 ');
+      if(play) {
+         audioElement.play();
+      }
+   }
+</script>
 
 <div id="nowPlayingBarContainer">
    <div id="nowPlayingBars">
@@ -20,10 +34,10 @@ $jsonArray = json_encode($resultArray);
             </span>
             <div class="trackInfo">
                <span class="trackName">
-               <span>a millie</span>
+               <span>song title</span>
                </span>
                <span class="artistName">
-               <span>lil wayne</span>
+               <span>song artist</span>
                </span>
             </div>
          </div>
