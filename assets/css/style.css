@@ -307,7 +307,7 @@ body {
 	text-align: right;
 }
 .tracklistRow .trackOptions img{
-	width: 15%;
+	width: 15px;
 	visibility: hidden;
 }
 .tracklistRow:hover .trackOptions img{
@@ -321,5 +321,5 @@ body {
 .tracklistRow .trackInfo .trackName {
 	color: #ffffff;
 	margin-bottom: 7px; 
-	
+
 }

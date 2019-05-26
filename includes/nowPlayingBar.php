@@ -18,7 +18,9 @@ $jsonArray = json_encode($resultArray);
 
 
    function setTrack(trackId, newPlaylist, play) {
-      audioElement.setTrack('assets/music/bensound-tomorrow.mp3 ');
+      $.post("includes/handlers/ajax/getSongJson.php", {songId: trackId}, function(data) {
+         console.log(data);
+      });
       if(play == true) {
          audioElement.play();
       }
@@ -60,7 +62,7 @@ $jsonArray = json_encode($resultArray);
                <img src="assets/images/icons/shuffle.png" alt="shuffle">
                </button>
                <button class="controlButton prev" title="prev button">
-               <img src="assets/images/icons/prev.png" alt="prev">
+               <img src="assets/images/icons/previous.png" alt="prev">
                </button>
                <button class="controlButton play" title="play button" onclick='playSong()'>
                <img src="assets/images/icons/play.png" alt="play">
