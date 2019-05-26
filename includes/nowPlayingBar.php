@@ -1,3 +1,16 @@
+<?php 
+$songQuery = mysqli_query($con, "select * from songs order by rand() limit 10");
+
+$resultArray = array();
+
+while($row = mysqli_fetch_array($songQuery)) {
+   array_push($resultArray, $row['id']);
+}
+
+$jsonArray = json_encode($resultArray);
+ ?>
+
+
 <div id="nowPlayingBarContainer">
    <div id="nowPlayingBars">
       <div id="nowPlayingLeft">
