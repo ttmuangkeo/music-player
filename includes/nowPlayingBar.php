@@ -19,10 +19,21 @@ $jsonArray = json_encode($resultArray);
 
    function setTrack(trackId, newPlaylist, play) {
       audioElement.setTrack('assets/music/bensound-tomorrow.mp3 ');
-      if(play) {
+      if(play == true) {
          audioElement.play();
       }
    }
+
+   function playSong() {
+      $(".controlButton.play").hide();
+      $(".controlButton.pause").show();
+      audioElement.play();
+   }
+   function pauseSong() {
+      $(".controlButton.play").show();
+      $(".controlButton.pause").hide();
+      audioElement.pause();
+   }   
 </script>
 
 <div id="nowPlayingBarContainer">
@@ -51,10 +62,10 @@ $jsonArray = json_encode($resultArray);
                <button class="controlButton prev" title="prev button">
                <img src="assets/images/icons/prev.png" alt="prev">
                </button>
-               <button class="controlButton play" title="play button">
+               <button class="controlButton play" title="play button" onclick='playSong()'>
                <img src="assets/images/icons/play.png" alt="play">
                </button>
-               <button class="controlButton pause" title="pause button" style="display:none;">
+               <button class="controlButton pause" title="pause button" style="display:none;" onclick='pauseSong()'>
                <img src="assets/images/icons/pause.png" alt="pause">
                </button>
                <button class="controlButton next" title="next button">
